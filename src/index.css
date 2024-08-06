@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@font-face {
+  font-family: 'Akzidenz';
+  src: url('../public/fonts/akzidenz/AkzidenzGrotesk-Extended.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal; 
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-nav-backdrop {
+  @apply bg-white bg-opacity-50 backdrop-blur-lg backdrop-saturate-150;
+}
+
+:root {
+  background-color: #FAF9F6;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.blur-circle {
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background-color: #1C30E1;
+  /*Adjustcolorandopacityasneeded*/border-radius: 50%;
+  filter: blur(250px);
+  pointer-events: none;
+  /*Ensurethecircledoesnotinterferewithcursorinteractions*/transform: translate(-50%, -50%);
+  /*Centerthecircleonthecursor*/z-index: -1;
+  /*Ensurethecirclestaysbehindotherelements*/;
+  -webkit-filter: blur(250px);
+}
