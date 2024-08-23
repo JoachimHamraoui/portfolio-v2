@@ -22,6 +22,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 .blur-circle {
@@ -36,4 +37,18 @@
   /*Centerthecircleonthecursor*/z-index: -1;
   /*Ensurethecirclestaysbehindotherelements*/;
   -webkit-filter: blur(250px);
+}
+
+/* .custom-cursor {
+  cursor: url('../public/images/head.png') 16 16, auto;
+} */
+
+::selection {
+  background-color: #1C30E1; /* Your custom background color */
+  color: #FAF9F6; /* Your custom text color */
+}
+
+::-moz-selection { /* For Firefox */
+  background-color: #1C30E1;
+  color: #FAF9F6;
 }
